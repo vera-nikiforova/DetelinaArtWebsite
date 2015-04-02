@@ -1,0 +1,38 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "MasterPage.cshtml";
+}
+<section id="contatMe">
+	<h1 class ="pageTitle">Contact</h1>
+	<section id="contactInfo">
+		<p>@Umbraco.Field("yourName")</p>
+		<p>@Umbraco.Field("yourEmail")</p>
+		<p>@Umbraco.Field("yourTelephone")</p>
+		<p>@Umbraco.Field("contactFormText")</p>
+	</section>
+	<section id="contactForm">
+		<form>
+			<div>
+				<label for="Name">@Umbraco.Field("Cname")</label>
+				<br />
+				<input type="text" id="Name" />
+			</div>
+			<div>
+				<label for="E-Mail">@Umbraco.Field("Cemail")</label>
+				<br />
+				<input type="email" id="E-Mail" />
+			</div>
+			<div>
+				<label for="Subject">@Umbraco.Field("subject")</label>
+				<br />
+				<input type="text" id="Subject" />
+			</div>
+			<div>
+				<label for="Subject">@Umbraco.Field("message")</label>
+				<br />
+				<textarea id="Message"></textarea>
+			</div>
+			<input type="submit" />
+		</form>
+	</section>
+</section>

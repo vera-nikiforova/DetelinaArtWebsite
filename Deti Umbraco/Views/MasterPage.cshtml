@@ -1,0 +1,38 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>About me</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="#Home.html">
+                <img id="logo" src="../media/1021/cropped-jj-logo-inverted.jpg" alt="logo" />
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/contact-me/">Contact</a>
+                <a href="/about-me/">About me</a>
+                <a href="/gallery/">My Jewellery</a>
+            </nav>
+        </header>
+	
+		@RenderBody()
+	
+		<footer>
+			<div id="siteinfo">
+				All rights reserved by Detelina Ivanova, 2014г.
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+	
+	
+	

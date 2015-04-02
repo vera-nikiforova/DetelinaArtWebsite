@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "MasterPage.cshtml";
+}
+<section id="aboutMe">
+	<h1 class="pageTitle">About me</h1>
+	<img id="profileImage" src="@Umbraco.Field("aboutmepicture")" alt="profile picture" />
+	<div id="entryContent">
+		<p>
+			@Umbraco.Field("aboutmeinformation")
+		</p>
+	</div>
+</section>

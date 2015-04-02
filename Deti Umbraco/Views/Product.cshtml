@@ -1,0 +1,46 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "MasterPage.cshtml";
+}
+<section id="container">
+	<div id="nav-above" class="navigation">
+		<div class="nav-previous">
+			<a href="#" rel="prev">
+				<span class="meta-nav">←</span>
+			</a>
+		</div>
+		<div class="nav-next">
+			<a href="#" rel="next">
+				<span class="meta-nav">→</span>
+			</a>
+		</div>
+	</div>
+	<section id="image">
+		<img src="@Umbraco.Field("image")" alt="neackle" />
+	</section>
+	<section id="moreImages">
+		<a href="#">
+			<img src="@Umbraco.Field("moreimages")" alt="product image" />
+		</a>
+		<a href="#">
+			<img src="@Umbraco.Field("moreimages")" alt="product image" />
+		</a>
+		<a href="#">
+			<img src="@Umbraco.Field("moreimages")" alt="product image" />
+		</a>
+		<a href="#">
+			<img src="@Umbraco.Field("moreimages")" alt="product image" />
+		</a>
+	</section>
+	<section id="imageInfo">
+		<h1>@Umbraco.Field("imagename")</h1>
+		<time datetime="2008-06-11">11 Jun</time>
+		<p>
+			@Umbraco.Field("imagedescription")
+		</p>
+	</section>
+	<footer id="meta">
+		
+	</footer>
+</section>
+  

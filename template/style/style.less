@@ -1,0 +1,206 @@
+﻿body, section, div, header, footer, a, p, img, h1, h2, nav, label, input {
+    margin:0;
+    padding:0;
+}
+@fontFamilly:'Hoefler Text', Garamond, 'Times New Roman', Times, serif;
+
+/*BODY*/
+body {
+    font-family: @fontFamilly;
+    font-size: 16px;
+    color: #999999;
+}
+
+/*WRAPPER*/
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+header {
+    display: block;
+    position: relative;
+    padding: 30px 0;
+    #logo {
+        display: inline-block;
+        width: 250px;
+        img {
+            width: 100%;
+        }
+    }
+    nav {
+        display: inline-block;
+        float: right;
+        margin-top: 50px;
+        a {
+            padding: 0 15px;
+            letter-spacing: 0.025em;
+            &:hover {
+                color:#575757;
+            }
+        }
+    }
+}
+
+/*COMMON*/
+#container {
+    width: 816px;
+    margin: 0 auto;
+    margin-bottom:66px;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+}
+
+.pageTitle {
+    font-size: 2.6em;
+    font-weight: 600;
+    font-family: @fontFamilly;
+    padding: 0 8px;
+    margin-bottom:22px;
+}
+
+
+/*PAGING*/
+#paging {
+    .navigation {
+        position:fixed;
+        top:50%;
+        font-size:66px;
+        color:#7d7d7d;
+        &:hover {
+            color:#575757;
+        }
+    }
+    .navPrevious {
+        left:150px;
+        float:left;
+    }
+    .navNext {
+        right:150px;
+        float:right;
+    }
+}
+
+/*GALLERY*/
+#gallery {
+    .galleryRow {
+        & div:first-child {
+            margin-left:0;
+        }
+        .galleryContent {
+            width:188px;
+            height:188px;
+            display:inline-block;
+            margin:0 0 16px 16px;
+            position:relative;
+            z-index:1;
+            &:hover {
+                background:#575757;
+                a {
+                    .galleryImageName {
+                        display:block;
+                    }
+                    .galleryImage {
+                        opacity:0.25;
+                    }
+                }
+            }
+            .galleryImageName {
+                opacity:1;
+                display:none;
+                color:white;
+                font-size:1.1em;
+                font-weight:400;
+                position:absolute;
+                top:10px;
+                left:20px;
+                z-index:3;
+            }
+            .galleryImage {
+                position:relative;
+                float:left;
+                width:188px;
+                height:188px;
+                display:inline-block;
+                z-index:2;
+            }
+        }
+        
+    }
+}
+
+/*PRODUCT PAGE*/
+
+#image {
+    width: 816px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    background:#F0F0F0;
+    text-align: center;
+    
+}
+#moreImages {
+    width:49%;
+    display:inline-block;
+    float:left;
+    a {
+        img {
+            width:98px;
+            height:98px;
+            margin-right:22px;
+        }
+    }
+}
+#imageInfo {
+    width:45%;
+    display:inline-block;
+    padding:20px;
+    border-left: 1px dotted #CCC;
+}
+
+
+
+/*ABOUT ME PAGE*/
+#aboutMe {
+    width: 500px;
+    margin-bottom: 66px;
+    #profileImage {
+        height: 400px;
+        margin-bottom: 22px;
+    }
+}
+
+/*CONTACT ME PAGE*/
+#contatMe {
+    margin-bottom: 66px;
+    p {
+        margin-bottom: 22px;
+    }
+    #contactForm {
+        form {
+            width: 450px;
+            div {
+                display: block;
+                input, textarea {
+                    line-height: 20px;
+                    width: 100%;
+                    margin: 3px 0 10px;
+                }
+                textarea {
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+/*FOOTER*/
+footer {
+    font-size: 14px;
+    padding: 0 8px 34px;
+    text-align: center;
+}
